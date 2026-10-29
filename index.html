@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaPath — Học lập trình Java</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">J</span><span>Java<span class="brand-light">Path</span><small>HỌC • LUYỆN • CHINH PHỤC</small></span></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Mở menu">☰</button>
+    <nav id="nav">
+      <a href="#home" class="nav-link active">Trang chủ</a>
+      <a href="#chapters" class="nav-link">Chương học</a>
+      <a href="#practice" class="nav-link">Thực hành</a>
+      <a href="#profile" class="nav-link">Trang cá nhân</a>
+    </nav>
+    <button class="btn btn-outline" id="openLogin">Đăng nhập</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> NỀN TẢNG HỌC JAVA TƯƠNG TÁC</div>
+        <h1>Viết dòng code đầu tiên.<br><span>Kiến tạo tương lai.</span></h1>
+        <p>Học Java theo lộ trình rõ ràng, luyện tập theo cấp độ và kiểm tra kiến thức ngay trên một nền tảng.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#chapters">Khám phá chương học <span>↗</span></a><a class="text-link" href="#practice">Bắt đầu thực hành <span>→</span></a></div>
+        <div class="hero-stats"><div><strong>08</strong><span>Chương học</span></div><div><strong>4 cấp độ</strong><span>Luyện tập tăng dần</span></div><div><strong>24/7</strong><span>Học chủ động</span></div></div>
+      </div>
+      <div class="hero-art">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="code-window"><div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>Main.java</span><span class="live">● JAVA</span></div>
+          <div class="code-lines"><div><em>01</em><code><b>public class</b> Main {</code></div><div><em>02</em><code>&nbsp;&nbsp;<b>public static void</b> main(</code></div><div><em>03</em><code>&nbsp;&nbsp;&nbsp;&nbsp;String[] args) {</code></div><div><em>04</em><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(</code></div><div><em>05</em><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mark>"Hello, Java!"</mark>);</code></div><div><em>06</em><code>&nbsp;&nbsp;&nbsp;&nbsp;}</code></div><div><em>07</em><code>&nbsp;&nbsp;}</code></div><div><em>08</em><code>}</code></div></div>
+          <div class="terminal"><span>▶ OUTPUT</span><strong>Hello, Java!</strong><small>Process finished with exit code 0</small></div>
+        </div><div class="floating-card"><span class="float-icon">✓</span><div><strong>Tiến bộ mỗi ngày</strong><small>Học một chút, giỏi hơn mỗi ngày</small></div></div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <div><span class="strip-icon">⌘</span><div><strong>Lộ trình có hệ thống</strong><small>Từ nền tảng đến hướng đối tượng</small></div></div>
+      <div><span class="strip-icon">⌁</span><div><strong>Bài tập phân cấp</strong><small>Dễ · Trung bình · Khó · Nâng cao</small></div></div>
+      <div><span class="strip-icon">◎</span><div><strong>Kiểm tra nhanh</strong><small>Nhận kết quả ngay sau khi nộp</small></div></div>
+    </section>
+
+    <section class="section" id="chapters">
+      <div class="section-heading"><div><div class="eyebrow">LỘ TRÌNH HỌC TẬP</div><h2>Chương học Java</h2><p>Chọn một chương để xem lý thuyết, bài tập và lời giải tham khảo.</p></div><span class="heading-count">08 CHƯƠNG</span></div>
+      <div class="chapter-grid" id="chapterGrid"></div>
+    </section>
+
+    <section class="practice-band" id="practice">
+      <div class="section practice-inner">
+        <div><div class="eyebrow light-eyebrow">GÓC THỰC HÀNH</div><h2>Ý tưởng chỉ trở thành kỹ năng<br>khi bạn bắt tay vào code.</h2><p>Chọn bài kiểm tra, làm bài thi thử hoặc khám phá bộ quản lý bài tập dành cho giáo viên.</p>
+          <div class="practice-actions"><button class="btn btn-white" data-mode="check">Vào kiểm tra <span>→</span></button><button class="btn btn-glass" data-mode="exam">Thi thử 2–3 bài</button></div>
+        </div>
+        <div class="practice-preview"><div class="preview-header"><span>JAVA CHALLENGE</span><span class="badge-green">● ĐANG SẴN SÀNG</span></div><div class="preview-question"><span class="difficulty easy">DỄ</span><h3>Tính tổng hai số nguyên</h3><p>Nhập hai số nguyên a, b. In ra tổng a + b.</p></div><div class="preview-bottom"><span>5 bộ test mẫu</span><strong>10 điểm tối đa</strong></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="profile">
+      <div class="section-heading"><div><div class="eyebrow">HỒ SƠ NGƯỜI HỌC</div><h2>Trang cá nhân</h2><p>Thông tin sinh viên được hiển thị tại trang chủ theo yêu cầu bài tập.</p></div></div>
+      <div class="profile-card">
+        <div class="profile-cover"><div class="profile-avatar" id="avatarPreview">TP</div><label class="upload-photo" for="photoInput">＋ Thêm ảnh cá nhân</label><input type="file" id="photoInput" accept="image/*" hidden></div>
+        <div class="profile-info"><div><span class="profile-label">HỌ VÀ TÊN</span><h3 id="profileName">Trương Thanh Phong</h3></div><div><span class="profile-label">MÃ SỐ SINH VIÊN</span><input id="studentId" class="profile-input" placeholder="Nhập mã số sinh viên của bạn"></div><div><span class="profile-label">NGÀNH HỌC</span><p>Công nghệ thông tin</p></div><div><span class="profile-label">SỞ THÍCH</span><p>Đá banh ⚽</p></div><button class="btn btn-primary" id="saveProfile">Lưu thông tin</button><span class="save-note" id="profileMessage"></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><span class="brand-mark">J</span><strong>JavaPath</strong></div><p>Nền tảng học tập Java • Học hôm nay, vững tay nghề ngày mai.</p><span>© 2026 JavaPath — Bài tập môn Lập trình Java</span></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="closeModal" aria-label="Đóng">×</button><div id="modalContent"></div></section>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
